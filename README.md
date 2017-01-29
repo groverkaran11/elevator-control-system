@@ -4,8 +4,7 @@
 The project is in the form of a maven project. To build, navigate to the top project directory and type mvn clean package. This will create a jar file in the target folder.
 
 ## Simulation
-``` mvn exec:java -Dexec.mainClass="com.meso.ecs.ElevatorControlSystemSimulator"
-```
+``` mvn exec:java -Dexec.mainClass="com.meso.ecs.ElevatorControlSystemSimulator" ```
 
 ## Design
 'ElevatorControlSystem.java' is the Interface class of the system and it offers the following APIs:
