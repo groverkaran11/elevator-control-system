@@ -3,9 +3,13 @@
 ## Build Instructions
 The project is in the form of a maven project. To build, navigate to the top project directory and type mvn clean package. This will create a jar file in the target folder.
 
+## Simulation
+``` mvn exec:java -Dexec.mainClass="com.meso.ecs.ElevatorControlSystemSimulator"
+```
+
 ## Design
 'ElevatorControlSystem.java' is the Interface class of the system and it offers the following APIs:
-```
+```java
 	/*
 	 * To find the status of the elevator - elevatorId, current floor, next floor, direction
 	 */
@@ -46,3 +50,7 @@ The project is in the form of a maven project. To build, navigate to the top pro
 4. direction - direction of the elevator
 5. upDestinationQueue - increasingly sorted queue of floors to stop at in the UP direction
 6. downDestinationQueue - decreasingly sorted queue of floors to stop at in the DOWN direction
+
+## Pickup Request Scheduling
+
+## Assumptions
