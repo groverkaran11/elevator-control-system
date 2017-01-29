@@ -5,7 +5,7 @@ The project is in the form of a maven project. To build, navigate to the top pro
 
 ## Design
 'ElevatorControlSystem.java' is the Interface class of the system and it offers the following APIs:
-```Java
+```
 	/*
 	 * To find the status of the elevator - elevatorId, current floor, next floor, direction
 	 */
@@ -27,9 +27,12 @@ The project is in the form of a maven project. To build, navigate to the top pro
 	public void step();
 ```
 
-***ElevatorImpl.java*** implements ***Elevator.java*** which models a single elevator through the following APIs:
+***ElevatorImpl.java*** implements ***Elevator.java*** which models the working of an single elevator through the following APIs:
 
 1. ``` public void addDestFloor(int floorId, int turnBackFromFloor); ```
+   Adds a floor to the destination queue maintained by the elevator
+2. ``` public void moveOneStep(); ```
+   Moves the elevator by one floor in a given direction and checks if has reached a destination floor. It changes the direction of the elevator if it has finished the destination queue in one/both direction. 
 
 
 
@@ -39,7 +42,5 @@ The project is in the form of a maven project. To build, navigate to the top pro
 2. currentFloor - current floor the elevator is positioned at
 3. nextFloor - next floor to stop at
 4. direction - direction of the elevator
-5. upDestinationQueue - queue of floors to stop at in the UP direction
-6. downDestinationQueue - queue of floors to stop at in the DOWN direction
-
-For modelling the working of elevator, it offers
+5. upDestinationQueue - increasingly sorted queue of floors to stop at in the UP direction
+6. downDestinationQueue - decreasingly sorted queue of floors to stop at in the DOWN direction
