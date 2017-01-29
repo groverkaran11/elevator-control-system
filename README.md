@@ -30,8 +30,10 @@ The project is in the form of a maven project. To build, navigate to the top pro
 ***ElevatorImpl.java*** implements ***Elevator.java*** which models the working of an single elevator through the following APIs:
 
 1. ``` public void addDestFloor(int floorId, int turnBackFromFloor); ```
+
    Adds a floor to the destination queue maintained by the elevator
 2. ``` public void moveOneStep(); ```
+
    Moves the elevator by one floor in a given direction and checks if has reached a destination floor. It changes the direction of the elevator if it has finished the destination queue in one/both direction. 
 
 
