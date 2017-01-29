@@ -28,5 +28,8 @@ The project is in the form of a maven project. To build, navigate to the top pro
 ```
 
 'ElevatorImpl.java' models a single elevator and it maintains the following attributes:
-1. elevatorId
-2. currentFloor
+1. elevatorId - the unique identifier for the elevator
+2. currentFloor - current floor the elevator is positioned at
+3. nextFloor - next floor to stop at
+4. direction - direction of the elevator
+5. upDestinationQueue - queue of floors to stop at in the UP direction
