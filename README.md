@@ -5,10 +5,10 @@ The project is in the form of a maven project. To build, navigate to the top pro
 
 ## Design
 'ElevatorControlSystem.java' is the Interface class, which offers the following APIs:
-```
-  /*
-   * To find the status of the elevator - elevatorId, current floor, next floor, direction
-   */
+```Java
+	/*
+	 * To find the status of the elevator - elevatorId, current floor, next floor, direction
+	 */
 	public ElevatorState status(int elevatorId);
 	
 	/*
